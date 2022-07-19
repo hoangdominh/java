@@ -40,8 +40,6 @@ public class DrawingMenu {
                     }
                     System.out.println(" ");
                 }
-
-
                 break;
             case 3:
                 Scanner input3 = new Scanner(System.in);
@@ -54,6 +52,7 @@ public class DrawingMenu {
                     }
                     System.out.println(" ");
                 }
+                break;
 
             case 4 :
                 Scanner input4 = new Scanner(System.in);
@@ -70,7 +69,6 @@ public class DrawingMenu {
                     }
                     System.out.println();
                 }
-
                 break;
             case 5:
                 System.exit(0);
