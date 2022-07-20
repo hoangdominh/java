@@ -31,9 +31,7 @@ public class SumNumbersInColumn {
         int x = 0;
         System.out.print("What column do you want to sum?");
         x = scanner.nextInt();
-        if(x < -1){
-            System.out.println("There is no column you want to delete");
-        } else if (x > column){
+        if(x < -1 || x > column){
             System.out.println("There is no column you want to delete");
         } else {
             int sum=0;
