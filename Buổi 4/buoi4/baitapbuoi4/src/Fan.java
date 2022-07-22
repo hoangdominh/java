@@ -1,3 +1,4 @@
+
 public class Fan {
     public static int SLOW = 1;
     public static int MEDIUM = 2;
@@ -10,46 +11,42 @@ public class Fan {
     private String color = "blue";
 
 
-//  Getter các thuộc tính của trường speed
+    public Fan(){
 
-    public int getSlow(){
-        return SLOW;
-    }
-    public int getMedium(){
-        return MEDIUM;
-    }
-    public int getFast(){
-        return FAST;
-    }
-
-//  Setter các thuộc tính của trường speed
-
-    public void setSLOW(int newSlow){
-        SLOW = newSlow;
-    }
-
-    public void setMEDIUM(int newMedium){
-        MEDIUM = newMedium;
-    }
-    public void setFAST(int newFast){
-        FAST = newFast;
     }
     public void On() {
         on = true;
     }
+
     public void Off() {
         on = false;
     }
-    public void Radius(double newRadius) {
-        radius = newRadius;
+
+    public int getSpeed() {
+        return speed;
     }
-    public void Color( String newColor){
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    //
+    public double getRadius(){
+        return radius;
+    }
+
+    public void setRadius(double newRadius) {
+        this.radius = newRadius;
+    }
+
+    public String getColor(){
+        return color;
+    }
+    public void setColor( String newColor){
         color = newColor;
     }
 
-    public Fan(){
 
-    }
+    @Override
     public String toString() {
         if(on){
             return speed + " " + color+ " "+ radius + " Fan is on";
@@ -59,4 +56,3 @@ public class Fan {
     }
 
 }
-
