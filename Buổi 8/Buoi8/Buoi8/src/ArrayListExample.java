@@ -22,7 +22,7 @@ public class ArrayListExample {
         int count= 0;
         System.out.println("Các phần tử có trong list là: ");
         while (iterator.hasNext()){
-//            System.out.println(iterator.next());
+            //            System.out.println(iterator.next());
             if(iterator.next().equals("Java")){
                 listString.remove(count);
 
