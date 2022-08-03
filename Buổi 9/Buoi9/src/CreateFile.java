@@ -6,6 +6,7 @@ public class CreateFile {
         String str = "File Handling in Java using " + "FileWriter and FileReader";
         FileWriter fw = new FileWriter( "output.txt");
 
+//      Đọc từng kí tự 1
         for (int i=0;i<str.length();i++){
             fw.write(str.charAt(i));
         }
